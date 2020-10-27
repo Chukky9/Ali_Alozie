@@ -1,9 +1,41 @@
-body{
-  background: grey;
-  font-size: 1.5rem;
-  margin: auto;
+@import
+  url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
 
+html {
+  font-family: 'Raleway', sans-serif;
+  background-color: #62df88;
+  margin: 40px auto 40px auto;
+  font-size: 1.1rem;
 }
-form{
-  margin: auto;
+
+.header {
+    text-align: center;
+    line-height: 0.6;
+}
+
+#survey-form {
+    margin: auto;
+    width: 600px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.radio-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-div {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 720px) {
+    #survey-form {
+        width: 100vw;
+    }
 }
