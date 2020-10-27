@@ -13,14 +13,24 @@
         </p>
 
         <form id="survey-form">
-          <label for="name">Name</label>
-          <input id="name" type="text" required>
+          <label for="name" id="name-label">Name</label>
+          <input id="name" type="text" required placeholder="Enter Name">
 
-          <label for="email">Email</label>
-          <input id="email" type="email" required>
+          <label for="email" id="email-label">Email</label>
+          <input id="email" type="email" required placeholder="Enter Email">
 
-          <label for="number">Age (Optional)</label>
-          <input type="number" id="number">
+          <label for="number" id="number-label">Age (Optional)</label>
+          <input type="number" id="number" min="10" max="99" placeholder="Enter Age">
+
+          <select id="dropdown" name="role" required>
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full time job</option>
+            <option>Full time learner</option>
+            <option>Prefer not to stay</option>
+            <option>Other</option>
+
+          </select>
 
         </form>
 
